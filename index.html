@@ -6,6 +6,14 @@
     <title>MyPortfolio</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
+    <link rel="stylesheet" href="keyframes.css"/>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="module" src="script.js">
+   (function(){
+       emailjs.init("lyVFXTKG2OO3Xr_kA"); // Add your EmailJS user ID here
+   })();
+</script>
 </head>
 <body>
   <nav id="desktop-nav">
@@ -383,30 +391,43 @@
           class="icon arrow"
           onclick="location.href='./#contact'"
         />
-      </section>
-
-      <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        <section>
+      
+          <!-- Contact Form -->
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
+            </div>
+      
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+      
+            <button type="submit">Send Message</button>
+      
+            <!-- Status Message -->
+            <p id="status-message"></p>
+          </form>
+      
+          <div class="contact-info-upper-container">
+              <div class="contact-info-container">
+                  <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                  <p><a href="mailto:adityagkwd.90@gmail.com">Mail me</a></p>
+              </div>
+              <div class="contact-info-container">
+                  <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                  <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+              </div>
           </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-          </div>
-        </div>
       </section>
+      
       <footer>
         <nav>
           <div class="nav-links-container">

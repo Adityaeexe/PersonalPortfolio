@@ -488,3 +488,105 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* hjhgbh */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; /* Light background */
+  margin: 0;
+  padding: 20px;
+}
+
+h1.title {
+  text-align: center;
+  color: #333; /* Dark text */
+  margin-bottom: 20px;
+}
+
+.section__text__p1 {
+  text-align: center;
+  color: #666; /* Grey text */
+}
+
+/* Contact Form Styles */
+#contact-form {
+  max-width: 500px; /* Limit the form width */
+  margin: 0 auto; /* Center the form */
+  padding: 20px;
+  background-color: #fff; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px; /* Space between label and input */
+  font-weight: bold; /* Bold labels */
+  color: #333; /* Dark text for labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Full width inputs */
+  padding: 10px; /* Padding inside the inputs */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 16px; /* Font size */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing of textarea */
+  min-height: 100px; /* Minimum height for the textarea */
+}
+
+/* Button Styles */
+button[type="submit"] {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  padding: 10px 15px; /* Padding for the button */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Slightly rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Status Message Styles */
+#status-message {
+  margin-top: 15px; /* Space above the message */
+  text-align: center; /* Centered text */
+  font-weight: bold; /* Bold message */
+}
+
+.contact-info-upper-container {
+  display: flex; /* Flex layout for contact info */
+  justify-content: space-around; /* Space between items */
+  margin-top: 20px; /* Space above the contact info */
+}
+
+.contact-info-container {
+  text-align: center; /* Centered text in info containers */
+}
+
+.contact-info-container img {
+  width: 30px; /* Size for icons */
+  margin-bottom: 5px; /* Space below icons */
+}
